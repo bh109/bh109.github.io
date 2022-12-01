@@ -1,0 +1,450 @@
+.menu,.risk_menu,.temp{
+    font-family: 'Helvetica', Times, serif;
+    font-weight: 750;
+    font-size: 1.3vw;
+    background-color: #151515;
+    text-decoration: none;
+}
+
+.temp{
+    color: #fff;
+}
+
+.cu{
+    font-weight: 750;
+    font-size: 1.4vw;
+    color: #fff;
+}
+
+.btt{
+    position:fixed;
+	bottom:0;
+    right: 0;
+    font-size: 2vw;
+    background-color: #802c2c;
+    border: none;
+    border-radius: 60px;
+    padding: 12px;
+    max-width: 100px;
+    margin-right: 0.7%;
+}
+
+.btt:hover {
+    background-color: #04aa6d;
+    cursor: pointer;
+}
+
+.btt:hover .arrow{
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.arrow{
+    background-color: inherit;
+    width: 87%;
+    margin : 0px;
+}
+
+.risk_menu{
+        position: relative;
+        display: inline-block;
+
+}
+.risk_list {
+    position: absolute;
+    display: none;
+    padding: 0ch;
+}
+
+.risk_list a{
+    display: block;
+}
+
+.harm{
+    list-style: none;
+}
+.item{
+    font-size: 1.3vw;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 20px 30px;
+    background-color: #151515;
+    color: #fff;
+}
+
+.risk_menu:hover .risk_list{
+    display: block
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-left: 3%;
+    padding-right: 3%;
+    color: #c9c9c9;
+    border-radius: 10px;
+    background-color: #151515;
+}
+
+.logo{
+    background-color: #151515;
+    margin-right: auto;
+    margin: 20px;
+    width: 70px;
+    user-select: none ;
+}
+
+.logotxt{
+    background-color: #151515;
+    margin-right: auto;
+    font-size: 33px;
+    user-select: none ;
+    color: #fff;
+}
+ 
+@media screen and (max-width: 1045px){
+    .temp , .cu{
+        font-size: 2.3vw;
+    }
+    .logotxt {
+        display: none;
+    } 
+    .logo{
+        margin-right: auto;
+    }
+}
+
+
+
+nav{
+    background-color: #151515;
+}
+
+.nav_links {
+    background-color: #151515;
+}
+
+
+.menu,.risk_menu{
+    display: inline-block;
+    padding: 0px 1vw ;
+}
+
+.nav_links li a{
+    transition: all 0.6s;
+}
+
+.nav_links li a:hover{
+    color:#d8a284;
+}
+
+.cu{
+    background-color: #cb4444;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    margin: 15px;
+}
+
+.cu:hover{
+    background-color: #04aa6d;
+    cursor: pointer;
+}
+
+div{
+    overflow: hidden;
+}
+
+.first{
+    padding-top: 30px;
+}
+
+.i_title{
+    font-size: 2.3vw;
+    font-weight: 200;
+    color: #cb4444;
+    margin: 0px 50px 0px 0px;
+}
+
+.dyk{
+    font-size: 3vw;
+    font-weight: 600;
+    margin: 0px 50px 0px 0px;
+}
+
+.content{
+    display: flex;
+    font-size: 2vw;
+    text-align: justify;
+    font-weight:100;
+    color: rgba(255, 255, 255, 0.767);
+    margin: 0px 5% 0px 0px;
+}
+
+.skull{
+    float: left;
+    margin-top: 8%;
+    width: 35%;
+}
+
+.third{
+    padding-top: 30px;
+}
+
+.iii_title{
+    text-align:center;
+    font-size: 3vw;
+    font-weight: 600;
+}
+.iii_content{
+    margin: 0px 10%;
+    font-size: 1.8vw;
+    text-align: justify;
+    font-weight:100;
+    color: rgba(255, 255, 255, 0.767)
+}
+
+.world{
+    display: block;
+    margin: auto;
+    width: 80%;
+    border: none;
+    border-radius: 50px;
+}
+
+.ii_title{
+    text-align:center;
+    font-size: 3vw;
+    font-weight: 600;
+}
+
+.ii_content{
+    margin: 0px 10%;
+    font-size: 1.8vw;
+    text-align: justify;
+    font-weight:100;
+    color: rgba(255, 255, 255, 0.767)
+}
+
+.baby{
+        display: block;
+        margin: auto;
+        width: 60%;
+        border: none;
+        border-radius: 50px;
+}
+
+.risk_title{
+    text-align:center;
+    font-size: 2.3vw;
+    font-weight: 600;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    color: #fff;
+}
+
+.risk_content{
+    margin: 0px 10%;
+    font-size: 1.5vw;
+    text-align: justify;
+    font-weight:100;
+    color: rgba(255, 255, 255, 0.767);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+.cig{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border: none;
+    border-radius: 100px;
+    padding: 1.8%;
+}
+
+.rskno{
+    font-size: 3vw;
+    font-weight: 300;
+    text-align: left;
+    margin-left: 130px;
+    margin-top: 5%;
+    color: #af7777;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.riskpic{
+    max-width: 40%;
+    float: left;
+    margin-left: 10%;
+}
+
+.rsk_description{
+    text-align: justify;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5vw;
+    font-weight:100;
+    color: rgba(255, 255, 255, 0.877);
+    overflow: hidden;
+}
+#Brain,#Lungs,#Bones,#Heart,#Mouth,#Skin{
+    margin-right: 7%;
+}
+
+footer{
+    background-color: #151515;
+    margin-top: 12%;
+    display: flex;
+    padding: 3% 90px 1% 90px;
+
+}
+.about{
+    width: 25%;
+    margin-left:2%;
+    background-color: inherit;
+    text-align: justify;
+    font-size: 20px;
+    font-family:sans-serif;
+    color: #c9c9c9;
+}
+
+.pic{
+    width: 40%;
+    margin-left:3% ;
+    background-color: inherit;
+    text-align: center;
+    font-size: 2vw;
+    color: #c9c9c9;
+}
+
+.picture{
+    width: 20%;
+    background-color: inherit;
+}
+
+.contact{
+    margin-left:15% ;
+    padding-right: 50px;
+    font-size: 20px;
+    background-color: inherit;
+    font-family: sans-serif;
+    color: #c9c9c9;
+}
+
+.cases{
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.intro{
+    max-width: 80%;
+    margin: auto;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #eaebf1;
+}
+
+.lungbutton{
+    background-color: #cb4444;
+    border: none;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 1.5vw;
+}
+
+@media screen and (max-width: 1120px){
+    .about,.contact{display: none;}
+    .pic{margin: auto;}
+}
+
+.friends{
+    width: 40%;
+    border: none;
+    border-radius: 100px;
+}
+
+.form-box{
+    width: 380px;
+    height: 420px;
+    position: relative;
+    margin: 6% auto;
+    background: #151515;
+    padding: 5px;
+    border-radius:50px ;
+}
+
+.hero{
+    background-image:url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.button-box{
+    width: 250px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #5e5b5b;
+    border-radius: 30px;
+}
+
+.toggle-btn{
+    padding: 10px 30px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    color:inherit;
+}
+
+#btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 120px;
+    height: 100%;
+    background: linear-gradient(0deg,#000000,rgb(131, 126, 126));
+    border-radius: 30px;
+    transition: 0.5s;
+}
+
+.input-group{
+    top: 140px;
+    position: absolute;
+    width: 280px;
+    transition: 0.5s;
+    padding: 3%;
+    border-radius: 10px;
+}
+
+.input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid  #999;
+    outline: none;
+    background: transparent;
+    color: #fff;
+}
+.submit-btn{
+    color: inherit;
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin:auto;
+    background: linear-gradient(100deg,rgb(43, 8, 8),rgb(255, 3, 3));
+    border: 0;
+    outline: none;
+    border-radius: 30px;
+}
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}

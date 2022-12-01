@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+
+<head>
+    <html lang="en">
+    <meta charset="utf-8">
+    <title>NoSmoking</title>
+    <link rel="icon" href="smoke.jpg">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<style>
+    * {
+        background-color: black;
+        font-size: 19px;
+    }
+
+    #register input:focus+.loginform_hint {
+        display: block;
+    }
+
+    #register input:required:valid+.loginform_hint {
+        background: #28921f;
+    }
+
+    .loginform_hint {
+        background-color: #d45252;
+        border-radius: 3px 3px 3px 3px;
+        color: white;
+        width: 250px;
+        margin-top: 10px;
+        padding: 4px 6px;
+        position: absolute;
+        display: none;
+    }
+
+    .loginform_hint::before {
+        color: #d45252;
+        position: absolute;
+        top: -10px;
+        left: 30px;
+    }
+</style>
+
+<body>
+    <header>
+        <img class="logo" src="no-smoking.png" alt="NoSmoking">
+        <div class="logotxt">No Smoking</div>
+        <nav>
+            <ul class="nav_links">
+                <li class="menu"><a class="temp" href="home.html">Overview</a></li>
+                <li class="risk_menu"><a class="temp" href="risks.html">Risks</a>
+                    <ul class="risk_list">
+                        <li class="harm"><a class="item" href="#Brain">Brain</a></li>
+                        <li class="harm"><a class="item" href="#Lungs">Lungs</a></li>
+                        <li class="harm"><a class="item" href="#Bones">Bones</a></li>
+                        <li class="harm"><a class="item" href="#Heart">Heart</a></li>
+                        <li class="harm"><a class="item" href="#Mouth">Mouth</a></li>
+                        <li class="harm"><a class="item" href="#Skin">Skin</a></li>
+                    </ul>
+                </li>
+                <li class="menu"><a class="temp" href="how.html">How can I quit ?</a></li>
+            </ul>
+        </nav>
+        <a class="temp" href="contact.html" ><button class="cu"style="background-color: green; box-shadow: 0 0 50px 5px ;color:#fff">Contact us</button></a>
+    </header>
+    <div class="back">
+        <a href="#"><button class="btt"><img class="arrow" src="arrow.png" alt="arrow"></button></a>
+    </div>
+
+    <div class="hero">
+        <div class="form-box" style="height: 520px;color: rgb(255, 166, 0);">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <form id="login" class="input-group" style="top:120px">
+
+                <label style="font-family: 'Courier New', Courier, monospace;color: red" for="user">Username</label>
+                <input type="text" id="user" class="input-field" placeholder="Input Username" required>
+
+                <label style="font-family: 'Courier New', Courier, monospace;color: red" for="password">Password</label>
+                <input type="password" id="password" class="input-field" placeholder="Enter Password" required>
+
+                <label style="font-family: 'Courier New', Courier, monospace;color: red" for="messages">Messages</label>
+                <textarea class="input-field" id="messages" cols="25" rows="4" placeholder="Enter Messages"></textarea>
+
+                <button type="submit" class="submit-btn" onclick="receive()">Log in</button>
+            </form>
+            <form id="register" class="input-group">
+
+                <label style="font-family: 'Courier New', Courier, monospace;color: red" for="user">Username</label>
+                <input type="text" id="user" class="input-field" placeholder="Input Username" required>
+
+                <label style="font-family: 'Courier New', Courier, monospace;color: red" for="email">Email</label>
+                <input type="email" id="email" class="input-field" placeholder="Input Email" required>
+
+                <label style="font-family: 'Courier New', Courier, monospace;color: red" for="password">Password</label>
+                <input type="password" id="password" class="input-field"
+                    pattern="(?=^.{6,12}$)(?=.*\d)(?=.*[a-z])[a-zA-Z0-9 _-]*$" placeholder="Enter Password" required>
+                <span class="loginform_hint">Must be at least 6-12 characters (letters, numbers, underscores, or dashes
+                    only; must have at least one letter and one number). Do not use your email address or full
+                    name.</span>
+
+
+                <button type="submit" class="submit-btn" onclick="send()">Register</button>
+            </form>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            var i = document.forms["login"]["user"].value;
+
+            function register() {
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "132px";
+            }
+            function login() {
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+
+            function receive() {
+                var i = document.forms["login"]["user"].value
+                var j = document.forms["login"]["password"].value
+                var k = document.forms["login"]["messages"].value
+                if ((i == "binhe210") && (j == "abc123")) {
+                    if (k == "" || k == null) {
+                        alert("Please enter your messages")
+                    }
+                    else {
+                        alert("Successfully logged in !\nYour message has been sent");
+                    }
+                }
+                else {
+                    alert("Wrong username or password")
+                }
+            }
+            function send() {
+                var i = document.forms["register"]["user"].value
+                var j = document.forms["register"]["password"].value
+                if (i != "") {
+                    if (j.length > 5) {
+                        var check = false;
+                        var num = j.length;
+                        var x = 0;
+                        var pw = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+                        while (x < (num + 1)) {
+                            y = 0;
+                            while (y < 11) {
+                                if (j[x] == pw[y]) {
+                                    check = true;
+                                    y = y + 1
+                                }
+                                else {
+                                    y = y + 1
+                                }
+                            }
+                            x = x + 1
+                        }
+                        if (check == true) {
+                            alert("Successfully registered an account !")
+                        }
+                        else {
+                            alert("follow password format")
+                        }
+
+                    }
+                }
+            }
+        </script>
+        <footer>
+            <div class="about">
+                <b style="background-color:inherit; color: aquamarine">About</B>
+                <p style="background-color:inherit">This website is created so the awareness toward smoking will be
+                    noticed
+                    and greatly grabs the attention of people. We found out many people smoke at a very early age which
+                    is
+                    not recommended as long term smoking really can damage our body organ's functionality.
+                </p>
+            </div>
+
+            <div class="pic"><img class="picture" src="no-smoking.png" alt="NoSmoking"><br>DON'T SMOKE</div>
+
+            <div class="contact">
+                <b style="background-color:inherit;margin-top: 0px;color: rgba(255, 94, 0, 0.822);">Contact Us</b>
+                <p style="margin-top: 20px;background-color:inherit">
+                    Facebook :<br>NO SMOKING<br> <br>
+                    WhatsApp :<br>+60183552649<br> <br>
+                    Twitter :<br>@NO_SMOKING<br>
+                </p>
+            </div>
+        </footer>
+
+
+</body>
+
+</html>

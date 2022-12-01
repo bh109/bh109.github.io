@@ -1,0 +1,51 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<html>
+    <body>
+        <script>
+            function showheart(){
+                document.getElementById('hh').style.display="block";
+                document.getElementById('hh').style.opacity=1;
+                document.getElementById('bb').style.display="none";
+            }
+            function showbone(){
+                document.getElementById('bb').style.display="block";
+                document.getElementById('hh').style.display="none";
+            }    
+    </script>
+        <div>
+            <img src="bone.png" id="bb" onclick="showheart()">
+            <img src="heart.jpg" id="hh" style="opacity: 0;;" onclick="showbone()">
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+    </body>    
+</html>
